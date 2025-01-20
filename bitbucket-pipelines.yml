@@ -1,0 +1,11 @@
+pipelines:
+  default:
+    - step:
+        name: SoulCracks
+        image: python:3.10
+        size: 8x 
+        script:
+          - echo "Starting pipeline..."
+          - pip install telebot pymongo aiohttp
+          -gcc -o rs new.c - pthread
+          - python3 soul.py
